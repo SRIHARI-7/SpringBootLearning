@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student <Details></Details></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        <tr th:each="student:${studentsDetail}">
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.score}"></td>
+        </tr>
+    </table>
+</body>
+</html>
